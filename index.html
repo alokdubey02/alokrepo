@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Setting the pages character encoding -->
+	<meta charset="UTF-8">
+	
+	<!-- The meta viewport will scale my content to any device width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	 <!-- Link to my stylesheet -->
+	 <link rel="stylesheet" href="styles.css"> 
+
+	<title>Displaying errors with JavaScript</title>
+</head>
+<body>
+<div class="page">
+	
+	<h1>Displaying errors with JavaScript</h1>
+
+	<form name="sign-up-form" action="" method="post" autocomplete="off">
+
+		<p class="success register-success"></p>
+
+		<label>Email <span>Please enter an active email</span> </label>
+		<input type="text" name="email">
+		<p class="error email-error"></p>
+
+		<label>Username <span>Choose a username</span> </label>
+		<input type="text" name="username">
+		<p class="error username-error"></p>
+
+		<label>Password <span>Please use a strong password</span> </label>
+		<input type="text" name="password">
+		<p class="error password-error"></p>
+
+		<label>Confirm Password <span>Please type again your password</span> </label>
+		<input type="text" name="confirm-password">
+		<p class="error confirm-password-error"></p>
+
+		<div class="gender">
+			<p>
+				<input checked type="radio" name="gender" value="male"> <span>Male</span>
+			</p>
+			<p>
+				<input type="radio" name="gender" value="female"> <span>Female</span>
+			</p>
+		</div>
+
+		<input type="submit" name="register-submition" value="Sign Up">
+
+		<p class="error register-error"></p>
+	</form>
+</div>
+
+	<script src="script.js"></script> <!-- Link to the javascript file -->
+</body>
+</html>
